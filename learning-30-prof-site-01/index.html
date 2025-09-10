@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática 01 - Seletores CSS</title>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+    <div id="wrapper">      
+        <div id="header">
+            <img src="./images/logo.png" id="logo"/>
+            <div id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li id="special-link"><a href="newPage.html">New Page</a></li>
+                    <li><a href="#services" title="Veja nossos serviços">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="article">
+                <p>Bem-vindo ao nosso <span>site de demonstração</span>!</p>
+            </div>
+
+            <div class="article">
+                <h2>O que é Lorem Ipsum?</h2>
+                <p class="p-text">
+                    Lorem Ipsum é simplesmente um texto fictício da indústria de impressão e composição. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500.
+                </p>
+            </div>
+            
+            <div class="article">
+                <h2>Por que o usamos?</h2>
+                <p class="p-text">
+                    É um fato estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout.
+                </p>
+            </div>
+        </div>
+
+    <div class="content post">
+        <div class="article feature">
+          <span>Feature</span>
+        </div>
+
+        <div class="article column1">
+          <p>1. What is Lorem Ipsum ?</p>
+          <p class="p-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with. 
+          </p>
+        </div>
+        <div class="article column2">
+            <p>2. What is Lorem Ipsum ?</p>
+            <p class="p-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with. 
+            </p>
+        </div>
+        <div class="article column3">
+            <p>3. What is Lorem Ipsum ?</p>
+            <p class="p-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with. 
+            </p>
+        </div>
+    </div> 
+
+        <div class="content">
+            <div class="form-feature">
+                <h2>Formulário de Contato</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações Pessoais do Usuário</legend>
+                        
+                        <label for="name">Nome completo:</label>
+                        <input type="text" id="name" name="name" required />
+                        
+                        <label for="email">Seu email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="assunto">Assunto (opcional):</label>
+                        <input type="text" id="assunto" name="assunto" />
+                        
+                        <div class="button-container">
+                            <input type="submit" value="Enviar" />
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>&copy; Copyright 2025 - Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>

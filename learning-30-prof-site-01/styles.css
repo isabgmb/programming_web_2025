@@ -1,0 +1,172 @@
+:root {
+  --background-gray: #f4f4f4; 
+  --branco-cinza: #ffffcc;
+  --verde-escuro: #4CAF50;
+  --verde-hover: #367c39;      /* Adicionada para o hover do menu */
+  --verde-submit-hover: #45a049; /* Adicionada para o hover do botão */
+  --cinza: #ccc;
+  --branco: #fff;
+
+  --preto: #050505;
+  --preto-50: rgba(5, 5, 5, 0.5);
+  --preto-80: rgba(5, 5, 5, 0.8);
+  --cinza-100: #aaa;
+  --cinza-200: #7c7f7f;
+  --cinza-400: #333;
+  --cinza-500: #2e2e2e;
+  --cinza-600: #1c1c1c;
+  --cinza-700: #121212;
+
+  --azul: blue;                 /* Adicionada para o link com atributo title */
+  --azul-escuro: #161af3;       /* Mantida conforme original */
+}
+
+/* Seletor Universal: Aplica a todos os elementos da página. */
+/* Útil para resets básicos, como o box-sizing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seletor de Tipo (Elemento): Aplica a todos os elementos <body>. */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-gray);
+    color: var(--cinza-400);
+}
+
+/* Seletor de ID: Aplica ao único elemento com id="wrapper". */
+#wrapper {
+    width: 960px;
+    margin: auto;
+    border: 1px solid var(--cinza);
+    background-color: var(--branco);
+}
+
+/* Seletor de Descendente: Aplica a todos os <h1> que estão dentro de #header. */
+#header {    
+    background-color: var(--cinza-400);
+    color: var(--branco);
+    text-align: center;   
+}
+
+#logo{
+ width: 7rem;
+ padding: 15px;
+}
+
+/* Seletor de Classe: Aplica a todos os elementos com class="content". */
+.content {
+    padding: 20px;
+    overflow: hidden; /* Garante que o container se ajuste ao conteúdo flutuante */
+}
+
+/* Seletor de Múltiplas Classes: Aplica ao elemento que tem AMBAS as classes. */
+/* (Nenhum no HTML, mas seria .article.column1) */
+
+/* Seletor de Agrupamento: Aplica o mesmo estilo a múltiplos seletores. */
+.article, .form-feature {
+    border: 1px dashed var(--cinza-100);
+    padding: 15px;
+    margin-top: 15px;    
+}
+
+/* Seletor de Filho Direto: Aplica ao <ul> que é filho direto de #nav. */
+#nav > ul {
+    list-style-type: none;
+    background-color: var(--verde-escuro);
+    text-align: center;
+}
+
+/* Seletor de Descendente: Aplica a todos os <li> dentro de #nav. */
+#nav li {
+    display: inline-block; /* Coloca os itens do menu lado a lado */
+}
+
+/* Seletor de Descendente (mais específico): Aplica a todos os <a> dentro de um <li> que está em #nav */
+#nav li a {
+    color: var(--branco);
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Pseudo-classe: Aplica quando o mouse está sobre o link. */
+#nav li a:hover {
+    background-color: var(--verde-hover);
+}
+
+/* Seletor de Atributo: Aplica a qualquer <a> que tenha um atributo 'title'. */
+a[title] {
+    border-bottom: 2px dotted var(--azul);
+}
+
+/* Seletor de Atributo com Valor Específico: Aplica ao <a> cujo href é "newPage.html". */
+a[href="newPage.html"] {
+    font-weight: bold;
+}
+
+/* Seletor de Filho (Child): Seleciona o <span> que é filho de um <p>. */
+p span {
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+.feature span {
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+
+.content.post{
+    width: 100%;
+}
+
+.column1, .column2, .column3 {
+  width: 33%;
+  float: left;
+  height: 20rem;  
+}
+
+.column1 :nth-child(1), .column2 :nth-child(1), .column3 :nth-child(1){    
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.column1 :nth-child(2), .column2 :nth-child(2), .column3 :nth-child(2){     
+    text-align: justify;
+}
+
+
+.article, .feature {
+    border: 1px dashed var(--cinza-100);
+    padding: 15px;
+    margin-top: 15px;
+}
+
+ .feature {
+    background-color: var(--background-gray);
+ }
+
+ .content > .article{
+    background-color: var(--background-gray);
+ }
+ 
+ /* Container para alinhar o botão à direita */
+.button-container {
+    text-align: right; /* Alinha todo o conteúdo inline (como o botão) à direita */
+    margin-top: 15px; /* Adiciona um espaço acima do container do botão */
+    padding-right: 5px;
+    padding-bottom: 10px;
+}
+
+/* Seletor de ID para o rodapé */
+#footer {
+    text-align: center;
+    padding: 15px;
+    background-color: var(--cinza-400);
+    color: var(--branco);
+    font-size: 0.9em;
+}
