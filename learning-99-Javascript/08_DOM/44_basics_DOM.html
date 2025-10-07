@@ -1,0 +1,52 @@
+// Assume this tag exists in the page:
+<div id="container"> </div>
+
+// Later in the page:
+<script>
+  // Global `document` object represents the root of the page
+  // Nodes have APIs for querying descendents
+  let container = document.getElementById("container");
+  container.innerHTML = "New Content!";
+  // Dynamically create new nodes
+  let div2 = document.createElement("div");
+  div2.innerText = "Hello!";
+  div2.classList.append("test");
+  container.appendChild(div2);
+
+  let testClassNodes = document.querySelectorAll("div.test");
+  // Returns a NodeList, not an actual array, but close:
+  testClassNodes.forEach(node => console.log(node.innerText));
+
+  // Dynamically change styles (note "camelCasing" here!)
+  document.body.style.backgroundColor = "red";
+</script>
+
+
+<script>
+// Properties can be set:
+myElement.id = "test-id";
+
+// "Classnames" can be altered:
+myElement.classList.add('foo')
+myElement.classList.remove('bar')
+myElement.classList.toggle('baz')
+
+// DOM nodes reference parents, children, and siblings:
+myElement.children
+myElement.firstChild
+myElement.lastChild
+myElement.previousSibling
+myElement.nextSibling
+myElement.parentNode
+
+
+// And can be moved around:
+// Append element1 as the last child of element2
+element1.appendChild(element2)
+// Insert element2 as child of element 1, right before element3
+element1.insertBefore(element2, element3)
+
+const myElementClone = myElement.cloneNode()
+myParentElement.appendChild(myElementClone)
+
+</script>
