@@ -6,11 +6,15 @@
   // Global `document` object represents the root of the page
   // Nodes have APIs for querying descendents
   let container = document.getElementById("container");
+  console.log(container)
+
   container.innerHTML = "New Content!";
   // Dynamically create new nodes
   let div2 = document.createElement("div");
   div2.innerText = "Hello!";
-  div2.classList.append("test");
+  console.log("Hello : ", container)
+
+  //div2.classList.append("test");
   container.appendChild(div2);
 
   let testClassNodes = document.querySelectorAll("div.test");
@@ -18,7 +22,8 @@
   testClassNodes.forEach(node => console.log(node.innerText));
 
   // Dynamically change styles (note "camelCasing" here!)
-  document.body.style.backgroundColor = "red";
+  document.body.style.backgroundColor = "#000000";
+  document.body.style.color = "#FFFFFF";
 </script>
 
 

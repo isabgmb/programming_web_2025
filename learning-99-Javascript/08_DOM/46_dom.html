@@ -3,6 +3,7 @@
 </div>
 
 <script>
+
 let parent = document.getElementById("parent");
 let child = document.getElementById("child");
 
@@ -23,5 +24,7 @@ parent.addEventListener("mousedown", (e) => {
     // canceled due to `e.stopPropagation()` in child
     console.log("This won't run");
 })
+
+console.log(document.body)
 
 </script>
